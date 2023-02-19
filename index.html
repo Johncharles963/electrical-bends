@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body">
+    <div class="container">
+        <h1>BEND CALCULATOR</h1>
+        <form onsubmit="return false">
+            <div class="input-container">
+                <label class="">Pipe size</label>
+                <select id="pipe-size" class="input">
+                    <option>1/2"</option>
+                    <option>3/4"</option>
+                    <option>1"</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <label>Offset Angle</label>
+                <select id="angle" class="input">
+                    <option>45&#176;</option>
+                    <option>30&#176;</option>
+                    <option>22.5&#176;</option>
+                    <option>10&#176;</option>
+                </select>
+            </div>
+            <button class="submit-btn" onclick="calculate();">Calculate</button>
+        </form>
+        <h2 id="displayed-value"></h2>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
