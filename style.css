@@ -7,6 +7,7 @@
     align-items: center;
     justify-content: center;
     font-family: Copperplate Gothic Light; 
+    padding: 0;
 }
 .container{
     width: 536px;
@@ -58,3 +59,13 @@ select{
 h2{
     text-align: center;
 }
+
+@media (max-width: 426px) {
+    .container{
+        width: 80%;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+    }
+  }
