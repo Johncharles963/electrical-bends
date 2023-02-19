@@ -9,6 +9,11 @@
     font-family: Copperplate Gothic Light; 
     padding: 0;
 }
+html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 .container{
     width: 536px;
     border: 1px solid black;
