@@ -53,10 +53,14 @@ label{
     height: 25px;
 }
 .submit-btn{
-    margin-bottom: 20px;
-    border:none;
+    border-radius: 2px;
     font-family: Copperplate Gothic Light; 
     height: 25px;
+    border: none;
+}
+.submit-btn:active{
+    background-color: #5170DC;
+    color: white;
 }
 select{
     font-family: Copperplate Gothic Light; 

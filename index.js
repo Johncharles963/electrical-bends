@@ -26,7 +26,6 @@ const calculate = () => {
 const getTotal = (pipeSize, angle) => {
     let diff = pipeSize / .25 - 2
     let total = 0.0
-    console.log(angle)
     switch (angle) {
         case 45:
             total = (diff * 1.25) + 5
@@ -58,5 +57,13 @@ const getTotal = (pipeSize, angle) => {
             break;
     }
 
-    return total
+    total = String(total)
+    total = total.replace(".25", " 1/4")
+    total = total.replace(".5", " 1/2")
+    total = total.replace(".75", " 3/4")
+    return total + ' "'
+}
+
+const resetTotal = () => {
+    displayedValueEl.innerText = ""
 }

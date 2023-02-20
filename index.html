@@ -14,7 +14,7 @@
         <form onsubmit="return false">
             <div class="input-container">
                 <label class="">Pipe size</label>
-                <select id="pipe-size" class="input">
+                <select onchange="resetTotal()" id="pipe-size" class="input">
                     <option>1/2"</option>
                     <option>3/4"</option>
                     <option>1"</option>
@@ -22,7 +22,7 @@
             </div>
             <div class="input-container">
                 <label>Offset Angle</label>
-                <select id="angle" class="input">
+                <select onchange="resetTotal()" id="angle" class="input">
                     <option>45&#176;</option>
                     <option>30&#176;</option>
                     <option>22.5&#176;</option>
